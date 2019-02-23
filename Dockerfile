@@ -23,3 +23,7 @@ ENV PATH /root/.rbenv/shims:/root/.rbenv/bin:/root/.nodenv/shims:/root/.nodenv/b
 
 # Set the working dir
 WORKDIR /code
+
+# Install commonly used versions of python and node
+RUN pyenv install 2.7.15 # cnx-recipes
+RUN nodenv install 8.9.4 # cnx-recipes
