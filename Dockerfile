@@ -25,8 +25,8 @@ ENV PATH /root/.rbenv/shims:/root/.rbenv/bin:/root/.nodenv/shims:/root/.nodenv/b
 WORKDIR /code
 
 # Install commonly used versions of python and node
-RUN pyenv install 2.7.15 # cnx-recipes
-RUN nodenv install 8.9.4 # cnx-recipes
+RUN pyenv install 3.6.8 # cnx-recipes
+RUN cd /root/.nodenv/plugins/node-build && git pull && cd - && nodenv install 10.15.3 # cnx-recipes
 
 # Install dependencies for Chrome
 # From https://github.com/GoogleChrome/puppeteer/blob/master/.ci/node8/Dockerfile.linux
