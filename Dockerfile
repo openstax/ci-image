@@ -1,4 +1,4 @@
-FROM python:3.7.0-stretch
+FROM python:3.7.10-buster
 
 # No interactive frontend during docker build
 ENV DEBIAN_FRONTEND=noninteractive \
